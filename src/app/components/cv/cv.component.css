@@ -1,0 +1,68 @@
+.container-fluid{
+
+   height: 640px;
+}
+.linkedin{
+    
+     height: inherit;
+     font-family: 'Anton', sans-serif;
+}
+.in {
+    height: inherit;
+    background-color: #006f8a;
+   
+    
+}
+.in a{
+    color:#ffbc49;
+    text-decoration: none;
+}
+.in a:hover, p:hover{
+    color:rgba(4, 103, 121, 0.6);
+}
+.out span{
+       position: relative;
+       top:7%;
+       font-size: 20em;
+       margin-bottom: 90px;
+}
+.in a {
+    position: relative;
+    top:9%;
+}
+.in a span{
+    position: relative;
+    top:-8%;
+    font-size: 20em;
+    margin-bottom: 90px;
+}
+.out{
+    height: inherit;
+    background-color: #ffbc49;
+    color:#006f8a;
+    
+}
+
+p{
+    font-size: 1em;
+ position: relative;
+ top:70px;
+ color: #ffbc49;
+}
+
+
+
+@media (max-width:460px){
+    .container-fluid{
+        height: 375px;
+    }
+    .in a span,.out span{
+        font-size: 10em;
+    }
+    p{
+        font-size: 1em;
+     position: relative;
+     top:40px;
+     color: #ffbc49;
+    }
+}

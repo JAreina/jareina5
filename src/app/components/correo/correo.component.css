@@ -1,0 +1,27 @@
+
+a.correo{
+    font-size: 1em;
+
+    margin-top: 6px;
+    text-align: center;
+    color:tomato;
+    text-decoration: none;
+}
+
+a.correo  i{
+    margin-top:6px;
+    color: tomato;
+    font-size: 3em;
+}
+
+a.correo:hover i, i:hover i{
+    color:#ffbc49;
+}
+
+@media(max-width: 768px)  { 
+a.correo{
+    font-size: 1em;
+    padding: 2%;
+    margin-left:40%;
+}
+}

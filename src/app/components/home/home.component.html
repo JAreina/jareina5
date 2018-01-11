@@ -1,0 +1,52 @@
+<div class="container-fluid home animated fadeIn">
+    <div class="row titulo">
+
+        <div class="col-md-12 bloqueTitular">
+            <h1 class="col-md-12 text-center" *ngFor="let texto of cabecera">{{texto}}</h1>
+
+        </div>
+
+        
+
+    </div>
+
+    <app-slider class="slider"></app-slider>
+
+</div>
+
+<div class="container-fluid cambio">
+
+    <div class="row">
+        <section class="seccionCambio">
+            <div class="col-md-12">
+                <h2 class="text-center tituloCambio">{{seccionCambio.titulo}} {{seccionCambio.subtitulo}}</h2>
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 text-center capacidades" *ngFor="let capacidad of seccionCambio.capacidades;let i = index">
+                    <div class="col-md-12 text-center">
+                        <div [ngSwitch]="i">
+                            <div class="block1" *ngSwitchCase="0">
+                                <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+
+                            </div>
+
+
+                            <div class="block2" *ngSwitchCase="1"><i class="fa fa-users fa-3x fa-fw" aria-hidden="true"></i></div>
+                            <div class="block3" *ngSwitchDefault>
+
+                                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+
+                            </div>
+                        </div>
+
+
+                        <p>{{capacidad}}</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+</div>

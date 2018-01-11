@@ -1,0 +1,52 @@
+
+<div  *ngIf="datos.length>0" class="proyecto animated fadeIn">
+  <div class="col-md-5 cajaProyecto " *ngFor="let dato of datos">
+       
+          
+          
+              <h2 class="cabeceraProyecto"><img [src]="dato.logo" 
+                class="img-responsive" alt="logo">
+                 {{dato.nombreProyecto}}</h2>
+              
+          
+          
+              <div class="descripcion">
+              {{dato.descripcionProyecto}}
+             
+              </div>
+              <a class="btn btn-info" 
+              [href]="dato.urlProyecto" 
+              target="_blank">Código</a> 
+            
+              <a *ngIf="dato.pageProyecto"  class="btn btn-info" 
+              [href]="dato.pageProyecto" 
+              target="_blank">Ver página</a> 
+               
+              <a *ngIf="dato.urlVideo"  class="btn btn-info" 
+              [href]="dato.urlVideo" 
+              target="_blank">Ver vídeo</a> 
+
+        </div>
+      </div>
+
+<!--  para proyecto detalle 
+      <div class="col-md-12 col-xs-12 marco" *ngIf="dato.tipoMedia === 'pagina'">
+        
+          
+            <iframe *ngIf="dato.pageProyecto" [src]="dato.pageProyecto" class="pagina animated fadeIn">
+              <p>Your browser does not support iframes.</p>
+            </iframe>
+          </div>
+
+          <div class="col-md-10 col-md-offset-3 col-xs-12 video-responsive" *ngIf="dato.tipoMedia === 'video'">  
+            <iframe *ngIf="dato.urlVideo" width="660" height="415"
+             [src]="dato.urlVideo" 
+             frameborder="0" allowfullscreen></iframe>
+
+      </div>-->
+  
+
+
+
+
+

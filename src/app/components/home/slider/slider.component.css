@@ -1,0 +1,66 @@
+h2{
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+.numConocimiento{
+    width: 25px;
+    height: 25px;
+    
+    font-family: 'Anton', sans-serif;
+    font-size: .8em;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 1px rgb(4, 6, 7);
+  
+}
+.numConocimiento p{
+    margin-top:1px;
+}
+.fondo{
+margin:0 auto;
+    width:100px;
+    height: 100px;
+    background-size: cover;
+    box-sizing: content-box;
+ 
+    cursor: pointer;
+  
+}
+.texto{
+    margin:0 auto;
+    margin-bottom: 23px;
+}
+.conocimientos{
+  
+    height: 480px;
+    background-color:transparent;
+}
+.tituloConocimiento{
+    padding:10px;
+}
+.diapositiva{
+    margin-top:15px;
+}
+@media (max-width:390px){
+  
+    .numConocimiento{
+    position: relative;
+    left: -3%;
+ }
+   h2{
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        font-weight: bolder;
+    }
+ 
+    .conocimientos{
+        height: 560px;
+    }
+   }
+   @media (max-width:1390px){
+    .numConocimiento{
+           margin-left: 49%;
+    }
+   }

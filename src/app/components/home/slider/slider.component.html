@@ -1,0 +1,27 @@
+<div class="col-xs-12 col-md-12 conocimientos">
+    <h2 class="text-center tituloConocimiento"
+      *ngFor="let t of titulo"
+    
+    
+    
+    >{{t}}</h2>
+    <div class="numConocimiento " ><p>
+        {{ idActual? idActual+1: "1" }}
+    </p></div>     
+      <div class="caja-fondo">
+        <section class="fondo animated  fadeIn"[style.backgroundImage]="fondo"
+        (mouseenter)="pararIntervalo()"
+        (mouseleave)="reanudarIntervalor()">
+
+        </section>
+
+      </div>
+     
+              <section class="text-center texto animated fadeIn" *ngFor="let conocimiento of conocimientos">
+                  
+                <h2>{{conocimiento.nombre}}</h2>
+         <p>{{conocimiento.descripcion[0]}}</p>
+         <p>{{conocimiento.descripcion[1]}}</p>
+              </section>
+          
+  </div>

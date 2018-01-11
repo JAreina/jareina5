@@ -1,0 +1,47 @@
+
+
+<section class="proyectosRealizados animated fadeIn">
+<div class="col-md-12 text-center cabeceraProyectos">
+<h1>{{cabecera.titulo}}</h1>
+<h2>{{cabecera.subtitulo}}</h2>
+<div *ngFor="let s of cabecera.de">
+
+
+    <div class="col-xs-12 col-md-2 text-center de">
+            <span>{{s}}</span>
+
+    </div>
+    
+</div>
+</div>
+
+<div  *ngIf="datos.length>0" class="proyecto animated fadeIn">
+    <div class="col-md-3 caja " *ngFor="let dato of datos">
+            <h2 class="cabeceraProyecto text-center">
+                    {{dato.nombreProyecto}}</h2>
+                    <div class="descripcion ">
+                            {{dato.descripcionProyecto}}
+                           
+                            </div>
+           
+            <a *ngIf="!dato.url" class="btn btn-info col-xs-4 col-xs-offset-4 boton" 
+            [routerLink]="['/slider',dato.id]">VER</a> 
+            <a *ngIf="dato.url" class="btn btn-info col-xs-4 col-xs-offset-4 boton" 
+            [href]="[dato.url]" target="a_blank">VER</a> 
+            
+             
+                    <div class="col-xs-12">
+                            <img [src]="dato.logo" 
+                            class="img-responsive" alt="logo">
+                    </div>
+                   
+                 
+                
+            
+            
+                
+  
+          </div>
+          
+        </div>
+</section>

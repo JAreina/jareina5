@@ -1,0 +1,15 @@
+.cabecera{
+    background-color: #ffbc49;
+}
+h1{
+    text-align: center;
+}
+.porfolio{
+    margin-bottom: 20px;
+}
+@media (max-width:420px){
+    h1{
+        font-size: 1em;
+      
+    }
+}

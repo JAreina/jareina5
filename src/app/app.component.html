@@ -1,0 +1,35 @@
+  <div class="container-fluid header">
+  <header >
+      
+    <div class="row laCabecera" >
+           <div class="col-md-4 col-lg-4 col-xs-6">
+            <!--<h1 [ngStyle]="bcrc.coloor" routerLink="home" (click)="submitEvent()" >
+              {{title}}
+              <h6>web development</h6>
+              </h1>-->
+             <img src="assets/img/JAreina-transparente-blanco.png" alt="logo" routerLink="home" (click)="submitEvent()">
+           </div>
+  <!--menu-->
+
+    <app-menu></app-menu>
+  
+
+  
+  
+  
+  </div>
+ 
+  </header>
+</div>
+  
+  <section class="cambia">
+              <div class="container-fluid">
+                 <div class="row">
+             
+                    <router-outlet></router-outlet>
+                </div>
+              </div>
+  </section>
+  
+  
+  <app-footer></app-footer>

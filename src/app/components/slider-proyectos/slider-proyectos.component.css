@@ -1,0 +1,116 @@
+
+.titu{
+    position:relative;
+    text-align: center;
+    z-index: 1000;
+    top:70px;
+   left: -40%;
+    color:#ffbc49;
+}
+.fondo{
+    box-sizing: content-box;
+    background-color:#006f8a;
+    height: 400px;
+    background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+    
+
+    cursor: pointer;
+    
+}
+.texto{
+    background-color: #ffbc49;
+    height: 150px;
+    
+}
+
+.botonVolver a{
+    margin-top:70px;
+    margin-left: 4.5%;
+    
+    background-color: #ffbc49;
+    color:#006f8a;
+    position: relative;
+    top:230px;
+    
+    border:none;
+   
+
+
+}
+
+.botonVolver a:hover{
+    background-color:#006f8a;
+    color:#ffbc49;
+}
+
+@media  (max-width:360px) {
+    .botonVolver a{
+        position: relative;
+        top:230px;
+        left: 25%;
+    }
+    .texto{
+        
+        height: 50px;
+        
+    }
+    .titu{
+        position:relative;
+        z-index: 1000;
+        top:20px;
+        left:0%;
+        text-align: center;
+       
+        color:#ffbc49;
+    }
+    .botonVolver a{
+        
+        margin-left: -1%;
+}
+}
+
+@media  (max-width:712px) {
+    .botonVolver a{
+        position: relative;
+        top:230px;
+        left: 25%;
+    }
+    .texto{
+        
+        height: 160px;
+        
+    }
+    .titu{
+        position:relative;
+        z-index: 1000;
+        top:20px;
+        left:0%;
+        text-align: center;
+       
+        color:#ffbc49;
+    }
+}
+
+@media  (max-width:992px) {
+    .botonVolver a{
+        position: relative;
+        top:230px;
+        left: 2%;
+    }
+    .texto{
+        
+        height: 160px;
+        
+    }
+    .titu{
+        position:relative;
+        z-index: 1000;
+        top:300px;
+        left:0%;
+        text-align: left;
+       
+        color:#ffbc49;
+    }
+}

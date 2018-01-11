@@ -1,0 +1,87 @@
+.home{
+    background:rgb(239, 243, 248);
+    
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+.foto_codigo {
+    margin: 10 auto;
+    margin-top:10px;
+    background: url('../../../assets/codigo3.png');
+   background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    box-shadow: 6px 5px 6px rgb(15, 30, 32);
+}
+
+.titulo{
+    background-color:rgba(20, 109, 129, 0.945);
+     color:#FFFFFF;
+     font-weight: 100;
+     
+     padding:29px;
+     font-family: 'Anton', sans-serif;
+     font-size: .8em;
+}
+
+.bloqueTitular{
+    margin-top:5px;
+    
+   
+}
+.slider{
+    width: 100%;
+}
+
+.seccionCambio{
+    height: 350px;
+    background-color: #ffbc49;
+
+}
+
+.tituloCambio{
+   padding:40px;
+    font-weight: bolder;
+
+}
+.capacidades{
+    padding:45px;
+}
+@media (max-width:520px){
+    
+    .titulo{
+        height: 450px;
+    }
+    .seccionCambio{
+        margin-top: -20px;
+        height: 750px;
+        background-color: #ffbc49;
+    
+    }
+   }
+@media (max-width:760px){
+     
+     .titulo{
+         height: 550px;
+     }
+     .seccionCambio{
+        height: 850px;
+        background-color: #ffbc49;
+    
+    }
+    }
+    @media (max-width:860px){
+        
+        .titulo{
+            height: 550px;
+        }
+        .seccionCambio{
+            height: 850px;
+            background-color: #ffbc49;
+        
+        }
+
+
+       }
